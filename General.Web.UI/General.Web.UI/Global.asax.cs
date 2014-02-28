@@ -7,6 +7,9 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using General.Data.Sql;
+using Autofac;
+using General.Ioc;
+using Autofac.Integration.Mvc;
 namespace General.Web.UI
 {
     // 注意: 有关启用 IIS6 或 IIS7 经典模式的说明，
@@ -23,6 +26,10 @@ namespace General.Web.UI
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
+            //Ioc注入
+             var buider =General.Ioc.Aurofac.RegisterService();
+             DependencyResolver.SetResolver(new AutofacDependencyResolver(buider.Build()));
+
             
         }
     }

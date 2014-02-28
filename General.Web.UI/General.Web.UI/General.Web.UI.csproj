@@ -39,6 +39,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.3.0\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.Mvc">
+      <HintPath>C:\Users\Administrator\Desktop\Autofac.Integration.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.dll</HintPath>
@@ -296,9 +302,17 @@
       <Project>{7e21d28a-a927-40eb-85e7-3262068d3fdf}</Project>
       <Name>General.Data.Sql</Name>
     </ProjectReference>
+    <ProjectReference Include="..\General.Ioc\General.Ioc.csproj">
+      <Project>{1ab7c336-c62f-41a9-91c3-aad90774aaa8}</Project>
+      <Name>General.Ioc</Name>
+    </ProjectReference>
     <ProjectReference Include="..\General.Model\General.Model.csproj">
       <Project>{70301150-a4ae-4a1f-b9a6-cc33119a0dbc}</Project>
       <Name>General.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\General.Service.Contract\General.Service.Contract.csproj">
+      <Project>{f87b6ca6-d24f-4069-b769-37b5f5c5c956}</Project>
+      <Name>General.Service.Contract</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

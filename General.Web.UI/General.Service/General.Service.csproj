@@ -39,8 +39,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="StudentService.cs" />
+    <Compile Include="TeacherService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\General.Data.Repository\General.Data.Repository.csproj">
+      <Project>{ec4232b8-7d99-46d3-8cb7-cd978a49d3a8}</Project>
+      <Name>General.Data.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\General.Model\General.Model.csproj">
+      <Project>{70301150-a4ae-4a1f-b9a6-cc33119a0dbc}</Project>
+      <Name>General.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\General.Service.Contract\General.Service.Contract.csproj">
+      <Project>{f87b6ca6-d24f-4069-b769-37b5f5c5c956}</Project>
+      <Name>General.Service.Contract</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

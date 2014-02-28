@@ -10,6 +10,7 @@ namespace General.Model
     {
       public int Salary { get; set; }
       public IList<Student> Students { get; set; }
+      public string Dog { get; set; }
 
     }
 }

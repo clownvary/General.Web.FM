@@ -39,8 +39,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="IBaseService.cs" />
+    <Compile Include="IStudentService.cs" />
+    <Compile Include="ITeacherService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\General.Model\General.Model.csproj">
+      <Project>{70301150-a4ae-4a1f-b9a6-cc33119a0dbc}</Project>
+      <Name>General.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
